@@ -1,0 +1,13 @@
+---
+- hosts: 
+   - jenyaslv1
+   - jenyaslv2
+
+  roles:
+  - java    
+  - user
+  
+- name: Install sonar
+  hosts: jenyaslv1
+  roles:
+  - sonar_user
